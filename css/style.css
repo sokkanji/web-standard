@@ -3,14 +3,13 @@
     width: 100%;
 }
 #header{
-    width: 100%;
     height: 325px;
     background: #111;
 }
 #contents{
     width: 100%;
     height: 800px;
-    background: #222;
+    /* background: #222; */
 }
 #footer{
     width: 100%;
@@ -18,11 +17,142 @@
     background: #333;
 }
 
-/* 컨텐츠 레이아웃 */
-#cont_nav{ width: 100%; height: 200px; background: #333;}
-#cont_tit{ width: 100%; height: 200px; background: #444;}
-#cont_ban{ width: 100%; height: 200px; background: #555;}
-#cont_cont{ width: 100%; height: 200px; background: #666;}
+/* 스킵 메뉴 */
+#skip{
+    position: absolute;
+}
+
+#skip a{
+    position: absolute;
+    left:5px;
+    border:1px solid #fff;
+    color:#fff;
+    width:130px;
+    height:25px;
+    text-align:center;
+    line-height:25px;
+    top:-40px;
+    font-size:12px;
+}
+
+#skip a:active,#skip a:focus{top:0;}
+
+/*콘텐츠 레이아웃*/
+#cont_nav{
+  
+}
+#cont_tit{
+    width:100%; height:200px;
+}
+#cont_ban{
+    width:100%; height:200px; background:#666;
+}
+#cont_cont{
+    width:100%; height:200px; background:#777;
+}
 
 /* 컨테이너 */
-.container{ width:990px; margin:0 auto; height:inherit; background: rgb(255, 255, 255, 0.3);}
+.container {
+    width:990px;
+    margin:0 auto;
+    height:inherit; /* 상속 */
+    background:rgb(255,255,255,0.3);
+}
+
+/* 헤더 메뉴 */
+.header{}
+.header .header-menu{text-align:right;}
+.header .header-menu a{color:white;padding:10px; display:inline;} 
+/* a태그를 text-align 적용할 떄는 a태그와 두께 */
+/* inline-block */
+
+#header{
+    background:url(../img/header_bg.jpg) top center repeat-x;
+}
+/* 헤더 메뉴 */
+.header .header-icon{
+    text-align: center;
+    margin-top:30px;
+}
+.header .header-icon a{ 
+    width:60px; 
+    height:60px; 
+    background:url(../img/icon.png); 
+    display : inline-block;
+}
+
+/* .header .header-icon a.incon1{ background-position : 0 0;}
+.header .header-icon a.incon2{ background-position : 0 -60px;}
+.header .header-icon a.incon3{ background-position : 0 -120px;}
+.header .header-icon a.incon4{ background-position : 0 -180px;}
+
+.header .header-icon a.incon1:hover{ background-position : -60px 0; }
+.header .header-icon a.incon2:hover{ background-position : -60px -60px; }
+.header .header-icon a.incon3:hover{ background-position : -60px -120px;}
+.header .header-icon a.incon4:hover{ background-position : -60px -180px;} */
+
+.header .header-icon a.icon1{background-position-x:0; background-position-y:0;}
+.header .header-icon a.icon2{background-position-x:0; background-position-y:-60px;}
+.header .header-icon a.icon3{background-position-x:0; background-position-y:-120px;}
+.header .header-icon a.icon4{background-position-x:0; background-position-y:-180px;}
+
+.header .header-icon a.icon1:hover{background-position-x:-60px; background-position-y:0;}
+.header .header-icon a.icon2:hover{background-position-x:-60px; background-position-y:-60px;}
+.header .header-icon a.icon3:hover{background-position-x:-60px; background-position-y:-120px;}
+.header .header-icon a.icon4:hover{background-position-x:-60px; background-position-y:-180px;}
+
+/* h1{
+    background-color: #4aa8d4;
+    width : 500px;
+    height: 40px;
+    text-align: center;
+    color : white;
+    padding : 5px;
+    margin : 0 auto;
+    position : absolute;
+    transform : translate(50%,50%);
+}
+
+#a{
+    background-color :#2698cb;
+    width : 100px;
+    height : 0px;
+    text-align: center;
+    padding : 5px;
+    margin : 0 auto;
+    position : absolute;
+    transform : translate(50%,50%);
+} */
+
+.header .header-tit{
+    text-align : center;
+}
+
+.header .header-tit h1{
+    color : #fff; 
+    font-size:28px;
+    background-color: #4aa8d4;
+    display : inline-block;
+    margin-top : 80px;
+    text-transform: uppercase;
+}
+
+.header .header-tit a{
+    display:inline-block; 
+    background-color :#2698cb;
+    color : #fff;
+    padding : 5px;
+    margin-top:-5px;
+}
+
+/* 전체메뉴 */
+.nav{margin-top: 30px;}
+.nav > div { width:40%; float:left;}
+.nav > div:last-child{width:20%;}
+.nav > div h3{ font-size:18px; color :#25a2d0; margin-bottom: 4px; }
+.nav > div ol li{ float : left; width: 50%; }
+.nav > div:last-child ol li{ width:100%;}
+.nav > div ol li a:hover{
+    text-decoration-color: #25a2d0;
+    text-decoration: underline;
+}
