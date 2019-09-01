@@ -45,10 +45,11 @@
     background : #eaf7fd;
 }
 #cont_ban{
-    width:100%; height:200px; background:#666;
+    /* width:100%; height:200px; background:#666; */
 }
 #cont_cont{
-    width:100%; height:200px; background:#777;
+    /* width:100%; height:200px; background:#777; */
+    background : #eaf7fd;
 }
 
 /* 컨테이너 */
@@ -217,3 +218,113 @@
 .ban ul li img{display:block; border : 4px solid #dcdcdc;}
 
 .ban ul li img:hover{ border : 4px solid #98dcdc;}
+
+/* 콘텐츠 레이아웃 */
+.cont { overflow:hidden; } 
+/* flowleft를 하면 무조건 overflow : hidden 을 해야함. */
+.cont .column{ 
+    width:288px; 
+    height:362px; 
+    /* background : #eaf7fd;  */
+    float :left;
+    margin : 0 30px 30px 0;
+    position:relative;
+}
+.cont .col1 { border-right : 1px solid #c8c8c8; }
+.cont .col2 { border-right : 1px solid #c8c8c8; }
+.cont .col3 { border-right : 1px solid #c8c8c8; }
+.cont .col4 { border-right : 1px solid #c8c8c8; }
+.cont .col5 { border-right : 1px solid #c8c8c8; }
+.cont .col6 { border-right : 1px solid #c8c8c8; }
+
+.cont .column .ico_img{
+    display:block;
+    background:url(../img/icon.png) no-repeat;
+    position:absolute; 
+    left:0;
+    top:0;
+    width : 60px;
+    height: 60px;
+}
+.cont .column .ico_tit { 
+    font-size: 16px;
+    color : #2c94c4;
+    padding-left : 70px;
+}
+.cont .column .ico_desc { 
+    padding-left : 70px; 
+    padding-bottom : 30px; 
+    border-bottom: 1px solid #d0d0d0; 
+    margin-bottom:15px;
+}
+.cont .col1 .ico_img { background-position: 0 -240px; }
+.cont .col2 .ico_img { background-position: 0 -300px; }
+.cont .col3 .ico_img { background-position: 0 -360px; }
+.cont .col4 .ico_img { background-position: 0 -420px; }
+.cont .col5 .ico_img { background-position: 0 -480px; }
+.cont .col6 .ico_img { background-position: 0 -540px; }
+
+.cont .col1 .ico_img:hover { background-position: -60px -240px; }
+.cont .col2 .ico_img:hover{ background-position: -60px -300px; }
+.cont .col3 .ico_img:hover { background-position: -60px -360px; }
+.cont .col4 .ico_img:hover { background-position: -60px -420px; }
+.cont .col5 .ico_img:hover { background-position: -60px -480px; }
+.cont .col6 .ico_img:hover { background-position: -60px -540px; }
+
+/* 게시판 1 */
+.notice { position:relative; margin-bottom: 10px;}
+.notice h4 { font-style: 14px; color :#0093bd; font-weight:bold; }
+.notice ul { }
+.notice ul li {overflow : hidden; text-overflow:ellipsis; white-space:nowrap;
+background: url(../img/dot.gif) no-repeat 0 7px; padding-left: 7px;} /* 텍스트...처리 */
+.notice ul li a{ font-size: 12px; }
+.notice a.more { 
+    background:url(../img/icon.png) no-repeat -150px -90px;
+    width:17px;
+    height:17px;
+    position:absolute; 
+    right:0;
+    top:0;
+}
+/* * 게시판 2*/
+.notice2{ position:relative;  }
+.notice2 h4{ font-size:14px; color:#0093dd; font-weight:bold;}
+.notice2 ul li{ overflow:hidden; background:url(../img/dot.gif) no-repeat 0 7px; padding-left:7px; }
+.notice2 ul li a{ width:60%; float:left; overflow:hidden; text-overflow: ellipsis; white-space:nowrap; font-size:12px; }
+.notice2 ul li span{ width:30%; float:right; font-size : 12px;}
+.notice2 a.more{ 
+    display:block; 
+    background:url(../img/icon.png) no-repeat -150px -90px; 
+    width:17px; 
+    height:17px;
+    position:absolute; 
+    right:0; 
+    top:0;
+}
+/* 게시판 3 */
+.notice3 { position : relative; margin-top:15px;  }
+.notice3 h4{  font-size:14px; color:#0093dd; padding-bottom: 3px; font-weight:bold; }
+.notice3 ul li { position : relative; padding : 8px 0 14px 60px; }
+.notice3 ul li a { }
+.notice3 ul li img { width : 50px; height: 50px; position: absolute; left : 0; top : 0; border: 2px solid #0093db;}
+.notice3 ul li a strong {display:block; overflow:hidden; text-overflow: ellipsis; white-space:nowrap; font-size:12px; }
+.notice3 ul li a span { font-size : 12px; display : block;   overflow:hidden; }
+.notice3 a.more {
+    background:url(../img/icon.png) no-repeat -150px -90px;
+    width:17px;
+    height:17px;
+    position:absolute; 
+    right:0;
+    top:0;
+}
+/* 마우스 오버효과 1 */
+.notice_over {}
+.notice_over h4 {}
+.notice_over ul {}
+.notice_over ul li {}
+.notice_over ul li a {}
+.notice_over ul li a span {}
+.notice_over ul li a span img{}
+.notice_over ul li em {}
+.notice_over ul li a strong {}
+.notice_over ul li a span:hover {}
