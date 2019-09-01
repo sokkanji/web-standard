@@ -317,14 +317,31 @@ background: url(../img/dot.gif) no-repeat 0 7px; padding-left: 7px;} /* 텍스�
     right:0;
     top:0;
 }
-/* 마우스 오버효과 1 */
-.notice_over {}
-.notice_over h4 {}
-.notice_over ul {}
-.notice_over ul li {}
-.notice_over ul li a {}
-.notice_over ul li a span {}
-.notice_over ul li a span img{}
-.notice_over ul li em {}
-.notice_over ul li a strong {}
-.notice_over ul li a span:hover {}
+/* 마우스 오버효과 1*/
+.noice_over{}
+.notice_over h4{font-size:14px; color:#0093dd; font-weight:bold; padding-bottom:3px; margin-top:10px;}
+.notice_over ul {overflow:hidden;}
+.notice_over ul li{float:left; width:83px; margin-right:7px; text-align:center;}
+.notice_over ul li.last{margin-right:0;}
+.notice_over ul li a{}
+.notice_over ul li a span{position: relative; display:block;}
+.notice_over ul li a span img{width:100%;}
+.notice_over ul li a span em{visibility: hidden; position: absolute;left:0;top:0;background:rgba(0,0,0,0.7); width:100%; height:83px; text-align:center;  line-height:83px;}
+.notice_over ul li a span:hover em{visibility: visible; }
+.notice_over ul li a strong{}
+/* .notice_over a.more{display:block; background:url(../img/icon.png) no-repeat -150px -90px; width:17px; height:17px; position:absolute; right:0; top:0;} */
+
+
+/* 마우스 오버효과 2*/
+.noice_over2{}
+/* .notice_over2 h4{font-size:14px; color:#0093dd; font-weight:bold; padding-bottom:3px; } */
+.notice_over2 ul {overflow:hidden;}
+.notice_over2 ul li{float:left; width:83px; margin-right:7px; text-align:center;}
+.notice_over2 ul li.last{margin-right:0;}
+.notice_over2 ul li a{}
+.notice_over2 ul li a span{position: relative; display:inline-block; height:83px; }
+.notice_over2 ul li a span img{width:100%;}
+.notice_over2 ul li a span em{visibility: hidden; position: absolute; left:0; bottom:0; background:rgba(0,0,0,0.7); width:100%; height:20%; text-align:center; color:white;}
+.notice_over2 ul li a span:hover em{visibility: visible;}
+.notice_over2 ul li a strong{}
+/* .notice_over2 a.more{display:block; background:url(../img/icon.png) no-repeat -150px -90px; width:17px; height:17px; position:absolute; right:0; top:0;} */
