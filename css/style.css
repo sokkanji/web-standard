@@ -345,3 +345,38 @@ background: url(../img/dot.gif) no-repeat 0 7px; padding-left: 7px;} /* 텍스�
 .notice_over2 ul li a span:hover em{visibility: visible;}
 .notice_over2 ul li a strong{}
 /* .notice_over2 a.more{display:block; background:url(../img/icon.png) no-repeat -150px -90px; width:17px; height:17px; position:absolute; right:0; top:0;} */
+
+/* 탭메뉴 */
+.tab_menu {position:relative; border:1px solid #ccc; padding:8px; height:105px;}
+.tab_menu ul {overflow:hidden; border-bottom:1px solid #ccc;}
+.tab_menu ul li {float:left; border:1px solid #ccc; margin-right:-1px; margin-bottom:-1px;}
+/* margin-right를 마이너스로 주면 원래 두줄인데, 한줄로 보임 (한줄효과) */
+.tab_menu ul li a {padding:5px 5px 5px 5px; display:block;}
+.tab_menu ul li ul {position: absolute; left:0; top:48px; width:270px; border:0; } 
+.tab_menu ul li ul li {float:none; border: 0; background:url(../img/dot.gif) no-repeat 9px 8px; padding-left: 18px; }
+.tab_menu ul li ul li a {overflow:hidden; text-overflow:ellipsis; white-space:nowrap; width:100%; padding:0 0 3px 0; font-size: 12px; }
+.tab_menu ul li.active{background:#2C94c4;}
+.tab_menu ul li.active a {color:#fff;}
+.tab_menu ul li.active ul li a {color:#333;}
+/* 컨텐츠 요소를 안 보이게 하는 방법 
+1. display : none ---- display :block; //영역이 사라짐
+2. visivility : hidden ---- visibility : visible //영역은 남아있는데 사라짐
+3. opacity:0  --- cpacity:1
+4. width : 0 height :0*/
+
+/* 게시판 유형4 */
+.notice4 {}
+.notice4 h4 {}
+.notice4 h4 em {}
+.notice4 ul {}
+.notice4 ul li {}
+.notice4 ul li a {}
+.notice4 ul li span{}
+.notice4 a.more {   
+    background:url(../img/icon.png) no-repeat -150px -90px;
+    width:17px;
+    height:17px;
+    position:absolute; 
+    right:0;
+    top:0;
+}
