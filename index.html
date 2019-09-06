@@ -223,7 +223,43 @@
                                 <h3><span class="ico_img ir_pm">아이콘</span>
                                     <span class="ico_tit">Notice</span></h3>
                                     <p class="ico_desc">웹페이지에서 기본 게시판</p>
+                                    <!-- 로그인 -->
+                                    <h4 class="ir_pm">로그인 정보</h4>
+                                    <form method="post" action="#" name="login_form" id=login_from>
+                                        <fieldset>
+                                            <legend> 로그인 및 관련 설정 </legend>
+                                            <div class="login_header">
+                                                <div class="ir_pm">로그인 보안</div>
+                                                <div class="lh_check">
+                                                    <input id="infor_check" type="checkbox" class="input_check">
+                                                    <label for="infor_check">로그인 상태 유지</label>
+                                                </div>
+                                                <div class="lh_ip">
+                                                    IP 보안<em>ON</em>
+                                                </div>
+                                            </div>
+                                            <div class="login_content">
+                                                <h5 class="ir_pm">로그인 컨텐츠 영역</h5>
+                                                <div class="ic_text">
+                                                    <label class="ir_pm" for="uid">아이디</label>
+                                                    <input type="text" id="uid" nmae="uid" class=input_text maxlenth="20">
+                                                    <label class="ir_pm" for="upw">비밀번호</label>
+                                                    <input type ="text" id="upw" name="upw" class="input_text" maxlegth="20">
+                                                </div>
+                                                <button class="lc_btn" type="submit">로그인</botton>
+                                            </div>
+                                            <div class="login_footer">
+                                                <h5 class="ir_pm">로그인 문제 해결</h5>
+                                                <ul>
+                                                    <li><a href="#"><strong>회원가입</strong></a></li>
+                                                    <li><a href="#">아이디 &middot; <a href="#">비밀번호찾기</a></li>
+                                                </ul>
+                                            </div>
+                                        </fieldset>
+                                    </form>
+                                    <!-- //로그인 -->
                             </div><!-- col3 끝 -->
+
                             <div class="column col4">
                                 <h3><span class="ico_img ir_pm">아이콘</span>
                                 <span class="ico_tit">Notice</span></h3>
@@ -341,7 +377,6 @@
                                         <li><a href ="#">프로그래머와 퍼플리셔의 차이는 무엇인가요?</a><span>2019.09.04</span></li>
                                         <li><a href ="#">프로그래머와 퍼플리셔의 차이는 무엇인가요?</a><span>2019.09.04</span></li>
                                         <li><a href ="#">프로그래머와 퍼플리셔의 차이는 무엇인가요?</a><span>2019.09.04</span></li>
-                                        <li><a href ="#">프로그래머와 퍼플리셔의 차이는 무엇인가요?</a><span>2019.09.04</span></li>
                                     </ul>
                                     <a href="#" class="more ir_pm" title="더보기">더보기</a>
                                 </div>
@@ -352,13 +387,38 @@
                                 <h3><span class="ico_img ir_pm">아이콘</span>
                                 <span class="ico_tit">Notice</span></h3>
                                 <p class="ico_desc">웹페이지에서 기본 게시판 유형</p>
+
+                                <!-- 갤러리 -->
+                                <div class="gallery">
+                                    <h4>포트폴리오</h4>
+                                    <div class="gallery_btn">
+                                        <ul>
+                                            <li class="gb_icon1"><a href="#"><span class="ir_pm">시작</span></a></li>
+                                            <li class="gb_icon2"><a href="#"><span class="ir_pm">정지</span></a></li>
+                                            <li class="gb_icon3"><a href="#"><span class="ir_pm">이전이미지</span></a></li>
+                                            <li class="gb_icon4"><a href="#"><span class="ir_pm"> 다음이미지</span></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="gallery_img">
+                                        <ul>
+                                            <li><a href ="#"><img src="img/gallery01.jpg" alt="이미지1" ></a></li>
+                                            <li><a href ="#"><img src="img/gallery02.jpg" alt="이미지2" ></a></li>
+                                            <li><a href ="#"><img src="img/gallery03.jpg" alt="이미지3" ></a></li>
+                                            <li><a href ="#"><img src="img/gallery04.jpg" alt="이미지4" ></a></li>
+                                            <li><a href ="#"><img src="img/gallery05.jpg" alt="이미지5" ></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- 갤러리 끝 -->
                             </div> 
-                                <!-- col6 끝 -->
+                            <!-- col6 끝 -->
                         </dl>
                     </dl>
                 </div>
             </div>
-            <div id="footer"></div>
+            <div id="footer">
+                
+            </div>
         </table>
     </body>
 </html>
