@@ -364,19 +364,46 @@ background: url(../img/dot.gif) no-repeat 0 7px; padding-left: 7px;} /* 텍스�
 3. opacity:0  --- cpacity:1
 4. width : 0 height :0*/
 
-/* 게시판 유형4 */
-.notice4 {}
-.notice4 h4 {}
-.notice4 h4 em {}
-.notice4 ul {}
-.notice4 ul li {}
-.notice4 ul li a {}
-.notice4 ul li span{}
-.notice4 a.more {   
-    background:url(../img/icon.png) no-repeat -150px -90px;
-    width:17px;
-    height:17px;
-    position:absolute; 
-    right:0;
-    top:0;
-}
+ /*  게시판 4 */
+ .notice4 {position:relative;border:1px solid #ccc;}
+ .notice4 h4 {border-bottom:1px solid #ccc; font-size: 14px;color:#0093bd;font-weight: 700;}
+ .notice4 h4 em {color:#cf3292;}
+ .notice4 ul {padding: 10px;}
+ .notice4 li {overflow:hidden;background:url(../img/dot.gif) no-repeat 0 8px; padding-left: 8px;}
+ .notice4 li a {float:left; font-size: 12px;width:60%;overflow:hidden;text-overflow:ellipsis; white-space:nowrap;}
+ .notice4 li span {float: right;width:30%;text-align:right;}
+ .notice4 a.more {position:absolute;right:9px;top:9px;}
+
+/* 갤러리 */
+.gallery{border:1px solid #ccc; height:254px; position:relative; overflow:hidden;}
+.gallery h4{border-bottom:1px solid #ccc; font-size:14px; color:#0093dd; font-weight:bold; padding:10px 0 11px;}
+.gallery .gallery_btn{position:absolute; top:5px; right:7px;}
+.gallery .gallery_btn ul{overflow:hidden;}
+.gallery .gallery_btn ul li{float:left;}
+.gallery .gallery_btn ul li a{background:url(../img/icon.png) no-repeat; display:block; width:23px; height:23px; }
+.gallery .gallery_btn img{width:100%;}
+
+.gallery .gallery_btn li.gb_icon1 a{background-position:-150px -120px;}
+.gallery .gallery_btn li.gb_icon2 a{background-position:-150px -143px;}
+.gallery .gallery_btn li.gb_icon3 a{background-position:-150px -166px;}
+.gallery .gallery_btn li.gb_icon4 a{background-position:-150px -189px;}
+
+.gallery .gallery_btn li.gb_icon1 a:hover{background-position:-173px -120px;}
+.gallery .gallery_btn li.gb_icon2 a:hover{background-position:-173px -143px;}
+.gallery .gallery_btn li.gb_icon3 a:hover{background-position:-173px -166px;}
+.gallery .gallery_btn li.gb_icon4 a:hover{background-position:-173px -189px;}
+
+/* 로그인 */
+#login_form {background:#f2f4f5; padding: 15px;}
+.login_header {overflow:hidden;font-size: 12px;height: 30px;}
+.login_header .lh_check {float:left;padding-right: 15px;}
+.login_header .lh_ip {float:left;}
+.login_header .lh_ip em {color:#0093bd; text-decoration: underline; padding-left:5px; font-style:normal;}
+
+.login_content {position: relative;}
+.login_content .lc_btn{position: absolute; top:0; right:0; width:70px; height:50px;}
+.login_content .input_text {}
+
+.login_footer {}
+.login_footer li{}
+.login_footer li a {}
