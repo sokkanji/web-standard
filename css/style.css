@@ -1,56 +1,20 @@
 /* 레이아웃 */
-#wrap{
-    width: 100%;
-}
-#header{
-    height: 325px;
-    background: #111;
-}
-#contents{
-    width: 100%;
-    height: 800px;
-    /* background: #222; */
-}
-#footer{
-    width: 100%;
-    height: 200px;
-    background: #333;
-}
+#wrap{ width: 100%; }
+#header{ height: 325px; background: #111;}
+#contents{ width: 100%; height: 800px;}
+#footer{ width: 100%; height: 200px; background: #333;}
 
 /* 스킵 메뉴 */
-#skip{
-    position: absolute;
-}
+#skip{position: absolute;}
 
-#skip a{
-    position: absolute;
-    left:5px;
-    border:1px solid #fff;
-    color:#fff;
-    width:130px;
-    height:25px;
-    text-align:center;
-    line-height:25px;
-    top:-40px;
-    font-size:12px;
-}
+#skip a{position: absolute; left:5px; border:1px solid #fff; color:#fff; width:130px; height:25px; text-align:center; 
+    line-height:25px; top:-40px; font-size:12px; }
 
 #skip a:active,#skip a:focus{ top:0;}
 
 /*콘텐츠 레이아웃*/
-#cont_nav{
-  
-}
-#cont_tit{
-    background : #eaf7fd;
-}
-#cont_ban{
-    /* width:100%; height:200px; background:#666; */
-}
-#cont_cont{
-    /* width:100%; height:200px; background:#777; */
-    background : #eaf7fd;
-}
+#cont_tit{ background : #eaf7fd;}
+#cont_cont{ background : #eaf7fd;}
 
 /* 컨테이너 */
 .container {
@@ -61,7 +25,6 @@
 }
 
 /* 헤더 메뉴 */
-.header{}
 .header .header-menu{text-align:right;}
 .header .header-menu a{color:white;padding:10px; display:inline;} 
 /* a태그를 text-align 적용할 떄는 a태그와 두께 */
@@ -82,16 +45,6 @@
     display : inline-block;
 }
 
-/* .header .header-icon a.incon1{ background-position : 0 0;}
-.header .header-icon a.incon2{ background-position : 0 -60px;}
-.header .header-icon a.incon3{ background-position : 0 -120px;}
-.header .header-icon a.incon4{ background-position : 0 -180px;}
-
-.header .header-icon a.incon1:hover{ background-position : -60px 0; }
-.header .header-icon a.incon2:hover{ background-position : -60px -60px; }
-.header .header-icon a.incon3:hover{ background-position : -60px -120px;}
-.header .header-icon a.incon4:hover{ background-position : -60px -180px;} */
-
 .header .header-icon a.icon1{background-position-x:0; background-position-y:0;}
 .header .header-icon a.icon2{background-position-x:0; background-position-y:-60px;}
 .header .header-icon a.icon3{background-position-x:0; background-position-y:-120px;}
@@ -101,29 +54,6 @@
 .header .header-icon a.icon2:hover{background-position-x:-60px; background-position-y:-60px;}
 .header .header-icon a.icon3:hover{background-position-x:-60px; background-position-y:-120px;}
 .header .header-icon a.icon4:hover{background-position-x:-60px; background-position-y:-180px;}
-
-/* h1{
-    background-color: #4aa8d4;
-    width : 500px;
-    height: 40px;
-    text-align: center;
-    color : white;
-    padding : 5px;
-    margin : 0 auto;
-    position : absolute;
-    transform : translate(50%,50%);
-}
-
-#a{
-    background-color :#2698cb;
-    width : 100px;
-    height : 0px;
-    text-align: center;
-    padding : 5px;
-    margin : 0 auto;
-    position : absolute;
-    transform : translate(50%,50%);
-} */
 
 .header .header-tit{
     text-align : center;
@@ -158,7 +88,6 @@
 /* 타이틀 */
 .tit{ 
     position: relative;
-    /* background-color: skyblue; */
 }
 .tit h2{
     text-align: center;
@@ -274,7 +203,6 @@
 /* 게시판 1 */
 .notice { position:relative; margin-bottom: 10px;}
 .notice h4 { font-style: 14px; color :#0093bd; font-weight:bold; }
-.notice ul { }
 .notice ul li {overflow : hidden; text-overflow:ellipsis; white-space:nowrap;
 background: url(../img/dot.gif) no-repeat 0 7px; padding-left: 7px;} /* 텍스트...처리 */
 .notice ul li a{ font-size: 12px; }
@@ -305,7 +233,6 @@ background: url(../img/dot.gif) no-repeat 0 7px; padding-left: 7px;} /* 텍스�
 .notice3 { position : relative; margin-top:15px;  }
 .notice3 h4{  font-size:14px; color:#0093dd; padding-bottom: 3px; font-weight:bold; }
 .notice3 ul li { position : relative; padding : 8px 0 14px 60px; }
-.notice3 ul li a { }
 .notice3 ul li img { width : 50px; height: 50px; position: absolute; left : 0; top : 0; border: 2px solid #0093db;}
 .notice3 ul li a strong {display:block; overflow:hidden; text-overflow: ellipsis; white-space:nowrap; font-size:12px; }
 .notice3 ul li a span { font-size : 12px; display : block;   overflow:hidden; }
@@ -318,33 +245,24 @@ background: url(../img/dot.gif) no-repeat 0 7px; padding-left: 7px;} /* 텍스�
     top:0;
 }
 /* 마우스 오버효과 1*/
-.noice_over{}
 .notice_over h4{font-size:14px; color:#0093dd; font-weight:bold; padding-bottom:3px; margin-top:10px;}
 .notice_over ul {overflow:hidden;}
 .notice_over ul li{float:left; width:83px; margin-right:7px; text-align:center;}
 .notice_over ul li.last{margin-right:0;}
-.notice_over ul li a{}
 .notice_over ul li a span{position: relative; display:block;}
 .notice_over ul li a span img{width:100%;}
 .notice_over ul li a span em{visibility: hidden; position: absolute;left:0;top:0;background:rgba(0,0,0,0.7); width:100%; height:83px; text-align:center;  line-height:83px;}
 .notice_over ul li a span:hover em{visibility: visible; }
-.notice_over ul li a strong{}
-/* .notice_over a.more{display:block; background:url(../img/icon.png) no-repeat -150px -90px; width:17px; height:17px; position:absolute; right:0; top:0;} */
 
 
 /* 마우스 오버효과 2*/
-.noice_over2{}
-/* .notice_over2 h4{font-size:14px; color:#0093dd; font-weight:bold; padding-bottom:3px; } */
 .notice_over2 ul {overflow:hidden;}
 .notice_over2 ul li{float:left; width:83px; margin-right:7px; text-align:center;}
 .notice_over2 ul li.last{margin-right:0;}
-.notice_over2 ul li a{}
 .notice_over2 ul li a span{position: relative; display:inline-block; height:83px; }
 .notice_over2 ul li a span img{width:100%;}
 .notice_over2 ul li a span em{visibility: hidden; position: absolute; left:0; bottom:0; background:rgba(0,0,0,0.7); width:100%; height:20%; text-align:center; color:white;}
 .notice_over2 ul li a span:hover em{visibility: visible;}
-.notice_over2 ul li a strong{}
-/* .notice_over2 a.more{display:block; background:url(../img/icon.png) no-repeat -150px -90px; width:17px; height:17px; position:absolute; right:0; top:0;} */
 
 /* 탭메뉴 */
 .tab_menu {position:relative; border:1px solid #ccc; padding:8px; height:105px;}
