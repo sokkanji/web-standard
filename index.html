@@ -8,6 +8,7 @@
         <meta name="generator" content="vscode">
 
         <title>웹표준</title>
+        
         <!-- Css Style -->
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/style.css">
@@ -15,8 +16,10 @@
         <!-- 웹폰트 -->
         <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap&subset=korean" rel="stylesheet">
-
+        <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     </head>
+
     <body>
         <!-- 스킵 네비게이션 -->
         <div id="skip">
@@ -208,7 +211,6 @@
                                                 </a>
                                            </li>
                                            <li>
-                                          
                                                 <a herf="#">
                                                     <img src="img/notice04.jpg" alt="그림4">
                                                     <strong>[HTML] &ltul&gt</strong>
@@ -227,7 +229,7 @@
                                     <h4 class="ir_pm">로그인 정보</h4>
                                     <form method="post" action="#" name="login_form" id=login_from>
                                         <fieldset>
-                                            <legend> 로그인 및 관련 설정 </legend>
+                                            <legend class = "ir_pm"> 로그인 및 관련 설정 </legend>
                                             <div class="login_header">
                                                 <div class="ir_pm">로그인 보안</div>
                                                 <div class="lh_check">
@@ -258,6 +260,17 @@
                                         </fieldset>
                                     </form>
                                     <!-- //로그인 -->
+                                    <!-- 팝업 시작 -->
+                                    <div class="popup">
+                                        <h4>Adverisement</h4>
+                                        <ul>
+                                            <li class="layer"><a herf="#"><img src="img/sban07.jpg" alt="이미지1"></a></li>
+                                            <li class="window"><a herf="#"><img src="img/sban08.jpg" alt="이미지2"></li>
+                                            <li><a herf="#"><img src="img/sban09.jpg" alt="이미지3"></li>
+                                        </ul>
+                                    </div>
+
+                                    <!-- /팝업 시작 -->
                             </div><!-- col3 끝 -->
 
                             <div class="column col4">
@@ -417,8 +430,50 @@
                 </div>
             </div>
             <div id="footer">
-                
+                <div class="container ir_pm">푸터영역</div>
+                <h2 class ="ir_pm">footer</h2>
+                    <div class="footer">
+                        <ul>
+                            <li><a href="#">사이트 도움말 </a></li>
+                            <li><a href="#">사이트 이용약관</a></li>
+                            <li><a href="#">사이트 운영규칙</a></li>
+                            <li><a href="#"><strong>개인정보 취급방침</strong></a></li>
+                            <li><a href="#">책임의 한계와 법적고치</a></li>
+                            <li><a href="#">게시중단요청 서비스</a></li>
+                            <li><a href="#">고객센터</a></li>
+                        </ul>
+                        <address>
+                            Copyright &copywebProgramer.co.kr All Right Reserved
+                        </address>
+                </class>
             </div>
+            </div>
+        </div>
+        <!-- 레이어팝업 -->
+        <div id="layer">
+            <img src="img/webstandard01.jpg" alt="레이어팝업이미지">
+            <a herf="#" class="close">Close</a> 
+        </div>
         </table>
     </body>
+    <script type="text/javascript">
+    $(".window").click(function(){
+        // window.open("파일명", "팝업 이름", "옵션");
+        // 옵션 : left, top, eidth, height, status, toolbar, location, menubar, scrollbars, fullscreen
+        window.open("popup.html", "popup", "width=800, height=600, left=50, top=50, scroolbar=0, menubar=0, toolbar=0");
+    })
+    
+    //레이어팝업
+    
+    $(".layer").click(function(event){
+        evert.preventDefault();
+        $("#layer").css("display", "block");
+    });
+    $("#layer" .close).click(function(event){
+        $("#layer").fadeOut("slow");
+    });
+    
+    </script>
+
+
 </html>
