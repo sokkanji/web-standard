@@ -2,7 +2,7 @@
 #wrap{ width: 100%; }
 #header{ height: 325px; background: #111;}
 #contents{ width: 100%; height: 800px;}
-#footer{ width: 100%; height: 200px; background: #333;}
+#footer{ border : 1px solid #eee;}
 
 /* 스킵 메뉴 */
 #skip{position: absolute;}
@@ -235,7 +235,7 @@ background: url(../img/dot.gif) no-repeat 0 7px; padding-left: 7px;} /* 텍스�
 .notice3 ul li { position : relative; padding : 8px 0 14px 60px; }
 .notice3 ul li img { width : 50px; height: 50px; position: absolute; left : 0; top : 0; border: 2px solid #0093db;}
 .notice3 ul li a strong {display:block; overflow:hidden; text-overflow: ellipsis; white-space:nowrap; font-size:12px; }
-.notice3 ul li a span { font-size : 12px; display : block;   overflow:hidden; }
+.notice3 ul li a span { font-size : 12px; display : block; overflow:hidden; }
 .notice3 a.more {
     background:url(../img/icon.png) no-repeat -150px -90px;
     width:17px;
@@ -319,9 +319,34 @@ background: url(../img/dot.gif) no-repeat 0 7px; padding-left: 7px;} /* 텍스�
 .login_header .lh_ip em {color:#0093bd; text-decoration: underline; padding-left:5px; font-style:normal;}
 
 .login_content {position: relative;}
-.login_content .lc_btn{position: absolute; top:0; right:0; width:70px; height:50px;}
-.login_content .input_text {}
+.login_content .lc_btn{position: absolute; right:25px; top:0; width:62px; height:50px;
+background:#fff; border : 1px solid #bebebe; }
+.login_content .input_text { width: 179px; height: 16px; padding : 2px 5px; border : 1px sloid #bebebe; 
+    margin-bottom : 3px; background:#fff; }
+.login_footer { margin-top : 5px;}
+.login_footer li{display : inline;}
+.login_footer li a {font-size:12px;}
 
-.login_footer {}
-.login_footer li{}
-.login_footer li a {}
+/* footer 영역 */
+#footer {}
+.footer {padding :25px; text-align: center;}
+.footer ul {margin-bottom: 2px;}
+.footer ul li {position: relative; display:inline; padding : 0 7px;}
+.footer ul li:before{ 
+    content :''; 
+    /* | : 가상요소 */
+    width:1px; height:12px; background:#ccc; position: absolute; left:0; top:2px;  }
+.footer li:first-child:before{width:0; height:0;}
+
+/* 팝업 */
+.popup {margin-top:15px;}
+.popup h4 { font-size:14px; color:#0093dd; font-weight:bold; padding:10px 0 11px;}
+.popup ul{ overflow:hidden;}
+.popup ul li {float:left; width:83px; margin-right:3px;}
+.popup ul img {width:100%;}
+
+/* 레이어팝업 */
+#layer{display:none; position: fixed; left:50px; top:50px; width:700px; border:10px solid #dceff7; box-shadow:3px 10px #rgba(0,0,0,0.4)}
+#layer img {width:100%}
+#layer .close{position:aboute; right:20px; top:20px; background : #0093bd; padding:1px; }
+#layer .close:hover {}
