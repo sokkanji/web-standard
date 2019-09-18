@@ -333,9 +333,9 @@ background:#fff; border : 1px solid #bebebe; }
 .footer ul {margin-bottom: 2px;}
 .footer ul li {position: relative; display:inline; padding : 0 7px;}
 .footer ul li:before{ 
-    content :''; 
+        content :''; 
     /* | : 가상요소 */
-    width:1px; height:12px; background:#ccc; position: absolute; left:0; top:2px;  }
+width:1px; height:12px; background:#ccc; position: absolute; left:0; top:2px;  }
 .footer li:first-child:before{width:0; height:0;}
 
 /* 팝업 */
@@ -346,7 +346,7 @@ background:#fff; border : 1px solid #bebebe; }
 .popup ul img {width:100%;}
 
 /* 레이어팝업 */
-#layer{display:none; position: fixed; left:50px; top:50px; width:700px; border:10px solid #dceff7; box-shadow:3px 10px rgba(0,0,0,0.4)}
-#layer img {width:100%}
-#layer .close{position:aboute; right:20px; top:20px; background : #0093bd; padding:1px; }
-#layer .close:hover {}
+#layer{display:none; position:fixed; left:50px; top:50px; width:700px; border:10px solid #dceff7; box-shadow:3px 10px rgba(0,0,0,0.4);}
+#layer img{display:block; width:100%;}
+#layer .close{position:absolute; right:20px; top:20px; background:#0093bd; padding:1px 6px; color:#fff;}
+#layer .close:hover{text-decoration:underline;}
