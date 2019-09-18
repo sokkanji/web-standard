@@ -456,6 +456,7 @@
         </div>
         </table>
     </body>
+
     <script type="text/javascript">
     $(".window").click(function(){
         // window.open("파일명", "팝업 이름", "옵션");
@@ -463,17 +464,16 @@
         window.open("popup.html", "popup", "width=800, height=600, left=50, top=50, scroolbar=0, menubar=0, toolbar=0");
     })
     
-    //레이어팝업
-    
+    //레이어 팝업
     $(".layer").click(function(event){
-        evert.preventDefault();
-        $("#layer").css("display", "block");
-    });
-    $("#layer" .close).click(function(event){
+            event.preventDefault();
+            //$("#layer").css("display","block");
+            $("#layer").slideDown();
+    })
+    $("#layer .close").click(function(event){
+        event.preventDefault();
         $("#layer").fadeOut("slow");
-    });
-    
+    })
     </script>
-
 
 </html>
